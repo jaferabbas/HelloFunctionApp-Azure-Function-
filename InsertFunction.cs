@@ -27,7 +27,6 @@ namespace HelloFunctionApp
                 return new BadRequestObjectResult("Name is required.");
             }
 
-            // Get connection string from environment
             string connectionString = Environment.GetEnvironmentVariable("SqlConnectionString");
 
             try
